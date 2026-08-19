@@ -1,0 +1,53 @@
+header{
+  border-bottom: 1px solid #282c34;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 16px;
+}
+.dashboard {
+  display: flex;
+  gap: 16px;
+}
+.dashboard-content {
+  flex: 1;
+  padding: 16px;
+}
+aside {
+  max-width: 200px;
+  border-right: 1px solid #282c34;
+  padding: 16px;
+  height: 100vh;
+}
+.summary-cards-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.summary-card{
+  flex: 1;
+  border: 1px solid #282c34;
+  border-radius: 8px;
+  padding: 16px;
+}
+.recent-activity{
+  margin-top: 16px;
+  padding: 16px;
+}
+.recent-activity ul{
+  list-style-type: none;
+  padding: 0 8px;
+}
+.recent-activity li{
+  border-bottom: 1px solid #282c34;
+  text-align: left;
+  padding: 8px;
+}
+footer{
+  text-align: center;
+  padding: 16px;
+  border-top: 1px solid #282c34;
+}
