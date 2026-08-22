@@ -1,13 +1,14 @@
 // import DashboardPage from './modules/06-jsx-components/DashboardPage'
 import './App.css'
-import TeamPage from './modules/07-props-composition/TeamPage'
+import { StakeholderPage } from './modules/08-lists-rendering/StakeholderPage'
 
 function App() {
 
   return (
     <>
       {/* <DashboardPage /> */}
-      <TeamPage />
+      {/* <TeamPage /> */}
+      <StakeholderPage />
     </>
   )
 }
