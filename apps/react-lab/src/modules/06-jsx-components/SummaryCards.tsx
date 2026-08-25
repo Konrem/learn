@@ -1,9 +1,10 @@
+const cards = [
+  { title: "Total stakeholders", count: 24 },
+  { title: "High influence", count: 6 },
+  { title: "Recent interactions", count: 12 },
+];
+
 export default function SummaryCards() {
-  const cards = [
-    { title: "Total stakeholders", count: 24 },
-    { title: "High influence", count: 6 },
-    { title: "Recent interactions", count: 12 },
-  ];
   return (
     <div>
       <h2>Summary Cards</h2>
