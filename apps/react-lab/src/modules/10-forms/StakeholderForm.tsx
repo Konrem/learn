@@ -8,7 +8,7 @@ const initialValues: StakeholderFormValues = {
   influence: "",
   notes: "",
 };
-const newErrors = {
+const initialErrors = {
   name: "",
   email: "",
   role: "",
@@ -20,7 +20,7 @@ export default function StakeholderForm() {
   const [submittedValues, setSubmittedValues] =
     useState<StakeholderFormValues | null>(null);
 
-  const [errors, setErrors] = useState(newErrors);
+  const [errors, setErrors] = useState(initialErrors);
   const handleInputChange =
     (field: keyof StakeholderFormValues) =>
     (
@@ -36,6 +36,12 @@ export default function StakeholderForm() {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const newErrors = {
+      name: "",
+      email: "",
+      role: "",
+      influence: "",
+    };
 
     if (formValues.name.trim() === "") {
       newErrors.name = "Please enter a name.";
@@ -74,7 +80,7 @@ export default function StakeholderForm() {
   };
   const handleReset = () => {
     setFormValues(initialValues);
-    setErrors(newErrors);
+    setErrors(initialErrors);
   };
 
   return (
@@ -91,7 +97,7 @@ export default function StakeholderForm() {
               value={formValues.name}
               onChange={handleInputChange("name")}
             />
-            {newErrors.name && (
+            {errors.name && (
               <p id="name-error" role="alert" style={{ color: "red" }}>
                 {errors.name}
               </p>
@@ -107,7 +113,7 @@ export default function StakeholderForm() {
               onChange={handleInputChange("email")}
               aria-describedby="email-error"
             />
-            {newErrors.email && (
+            {errors.email && (
               <p id="email-error" role="alert" style={{ color: "red" }}>
                 {errors.email}
               </p>
@@ -126,7 +132,7 @@ export default function StakeholderForm() {
               <option value="manager">Manager</option>
               <option value="team_member">Team Member</option>
             </select>
-            {newErrors.role && (
+            {errors.role && (
               <p id="role-error" role="alert" style={{ color: "red" }}>
                 {errors.role}
               </p>
@@ -145,7 +151,7 @@ export default function StakeholderForm() {
               <option value="medium">Medium</option>
               <option value="low">Low</option>
             </select>
-            {newErrors.influence && (
+            {errors.influence && (
               <p id="influence-error" role="alert" style={{ color: "red" }}>
                 {errors.influence}
               </p>
