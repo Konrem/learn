@@ -1,6 +1,7 @@
 // import DashboardPage from './modules/06-jsx-components/DashboardPage'
 import './App.css'
-import ShortlistPage from './modules/09-events-state/ShortlistPage'
+import StakeholderFormPage from './modules/10-forms/StakeholderFormPage'
+// import ShortlistPage from './modules/09-events-state/ShortlistPage'
 // import StakeholderItem from './modules/08-lists-rendering/StakeholderItem'
 // import { StakeholderPage } from './modules/08-lists-rendering/StakeholderPage'
 
@@ -11,7 +12,8 @@ function App() {
       {/* <DashboardPage /> */}
       {/* <TeamPage /> */}
       {/* <StakeholderPage /> */}
-      <ShortlistPage />
+      {/* <ShortlistPage /> */}
+      <StakeholderFormPage />
     </>
   )
 }
