@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Alice Johnson",
+    "role": "frontend",
+    "organization": "Tech Corp"
+  },
+  {
+    "id": "2",
+    "name": "Bob Smith",
+    "role": "backend",
+    "organization": "Web Solutions"
+  },
+  {
+    "id": "3",
+    "name": "Carol Williams",
+    "role": "designer",
+    "organization": "Creative Studio"
+  },
+  {
+    "id": "4",
+    "name": "David Brown",
+    "role": "frontend",
+    "organization": "Tech Corp"
+  }
+]
